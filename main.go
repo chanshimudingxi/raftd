@@ -3,13 +3,14 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/goraft/raft"
-	"github.com/goraft/raftd/command"
-	"github.com/goraft/raftd/server"
 	"log"
 	"math/rand"
 	"os"
 	"time"
+
+	"github.com/chanshimudingxi/raft"
+	"github.com/chanshimudingxi/raftd/command"
+	"github.com/chanshimudingxi/raftd/server"
 )
 
 var verbose bool

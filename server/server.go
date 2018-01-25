@@ -4,10 +4,6 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"github.com/goraft/raft"
-	"github.com/goraft/raftd/command"
-	"github.com/goraft/raftd/db"
-	"github.com/gorilla/mux"
 	"io/ioutil"
 	"log"
 	"math/rand"
@@ -15,6 +11,11 @@ import (
 	"path/filepath"
 	"sync"
 	"time"
+
+	"github.com/chanshimudingxi/raft"
+	"github.com/chanshimudingxi/raftd/command"
+	"github.com/chanshimudingxi/raftd/db"
+	"github.com/gorilla/mux"
 )
 
 // The raftd server is a combination of the Raft server and an HTTP
